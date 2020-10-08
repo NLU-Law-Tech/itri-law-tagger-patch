@@ -18,5 +18,5 @@ setuptools.setup(
         'console_scripts': ['lt-patch=lt_patch:main'],
     },
     python_requires='>=3.5',
-    install_requires = ['VerdictFormat @ git+https://github.com/NLU-Law-Tech/VerdictFormat@master','pkgutil','rglob']
+    install_requires = ['VerdictFormat @ git+https://github.com/NLU-Law-Tech/VerdictFormat@master','rglob']
 )

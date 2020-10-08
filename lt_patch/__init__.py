@@ -25,7 +25,6 @@ def main():
             for i,ld_law in enumerate(ld['laws']):
                 ld['laws'][i]['content'] = restore_law_from_context(full_doc,law_list,[ld_law])[0]
         # save restart data
-        print(data)
         if(not os.path.isdir(args.out_dir)):
             os.mkdir(args.out_dir)
         ori_file_name = os.path.basename(json_path)

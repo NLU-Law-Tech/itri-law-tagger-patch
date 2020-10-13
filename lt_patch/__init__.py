@@ -28,7 +28,7 @@ def main():
         if(not os.path.isdir(args.out_dir)):
             os.mkdir(args.out_dir)
         ori_file_name = os.path.basename(json_path)
-        with open(re.sub(r'\\$','',args.out_dir)+ '\\' + ori_file_name,'w',encoding='utf-8') as f:
+        with open(re.sub(r'\\$|\/$','',args.out_dir)+ '/' + ori_file_name,'w',encoding='utf-8') as f:
             f.write(json.dumps(data,ensure_ascii=False))
 
         

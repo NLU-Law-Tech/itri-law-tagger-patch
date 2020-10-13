@@ -17,7 +17,7 @@ def main():
     # print(data)
     law_list = pkgutil.get_data(__name__, "assets/law_list.txt").decode('utf-8').split("\n")
     for json_path in ori_json_file_paths:
-        with open(json_path,"r",encoding="utf-8") as f:
+        with open(json_path,"r",encoding="utf-8",newline='') as f:
             data = json.loads(f.read())
         full_doc = data["full_doc"]
         # resotre data
